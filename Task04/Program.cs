@@ -14,5 +14,5 @@ Console.Write("Введите третье число: ");
 int num3 = Convert.ToInt32(Console.ReadLine());
 int max = num1;
 if (num2 > max) Console.WriteLine($"{num2}");
-if (num3 > max) Console.WriteLine($"{num3}");
+else if (num3 > max) Console.WriteLine($"{num3}");
 else Console.WriteLine($"{max}");

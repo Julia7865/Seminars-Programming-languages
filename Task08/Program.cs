@@ -8,9 +8,12 @@
 
 Console.Write("Введите число: ");
 int num = Convert.ToInt32(Console.ReadLine());
-int counter = 0;
+int counter = 1;
 while (counter <= num)
 {
-Console.Write($"{counter} ");
-counter = counter + 2;
+    if (counter % 2 == 0)
+    {
+        Console.Write($"{counter} ");
+    }
+    counter++;
 }
