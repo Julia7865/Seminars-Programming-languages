@@ -9,16 +9,13 @@
 
 Console.WriteLine("Введите чиcло: ");
 int number = Convert.ToInt32(Console.ReadLine());
-if (number / 10 == 0) Console.WriteLine("Третьей цифры нет");
-int count = 1;
-while (count < number)
+if (number < 100) Console.WriteLine("Третьей цифры нет");
+while (number > 100)
 {
-    if (number / 10 > 100)
-    {
-        int number2 = number % 10;
-        Console.WriteLine("{number2}");
-    }
-    count++;
+    int number1 = number / 10;
 }
+int res = number % 10; 
+Console.WriteLine("{res}");
+
 
 // Не получилось
