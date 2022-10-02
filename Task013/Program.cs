@@ -7,12 +7,18 @@
 // 32679 -> 6
 
 
-Console.WriteLine("Введите чило: ");
+Console.WriteLine("Введите чиcло: ");
 int number = Convert.ToInt32(Console.ReadLine());
-if (number / 10 = 0) Console.WriteLine("Третьей цифры нет");
-while (number / 10)
+if (number / 10 == 0) Console.WriteLine("Третьей цифры нет");
+int count = 1;
+while (count < number)
 {
-    
+    if (number / 10 > 100)
+    {
+        int number2 = number % 10;
+        Console.WriteLine("{number2}");
+    }
+    count++;
 }
 
-
+// Не получилось
