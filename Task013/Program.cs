@@ -10,13 +10,14 @@
 Console.WriteLine("Введите чиcло: ");
 int number = Convert.ToInt32(Console.ReadLine());
 if (number < 100) Console.WriteLine("Третьей цифры нет");
-while (number > 100)
+int ThirdNumber(int num)
 {
-    int number1 = number / 10;
-    number++;
+    int result = 1;
+    while (number > 99)
+    {
+        result = number % 10;
+        number = number / 10;
+    }
+    return result;
 }
-int res = number % 10; 
-Console.WriteLine($"{res}");
-
-
-// Не получилось
+Console.WriteLine(ThirdNumber(number));
