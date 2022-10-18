@@ -13,16 +13,12 @@ int number = Convert.ToInt32(Console.ReadLine());
 int SumNumber(int num)
 {
     int sum = 0;
-    while (number > 0)
+    while (num > 0)
     {
-        sum = sum + number % 10;
-        number = number / 10;
+        sum = sum + num % 10;
+        num = num / 10;
     }
     return sum;
 }
 int result = SumNumber(number);
 Console.WriteLine($"Сумма цифр числа {number} = {result}");
-
-
-// Что нужно сделать, чтобы в ответе number был введенным число, 
-// а не результатом вычислений?

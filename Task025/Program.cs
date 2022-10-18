@@ -11,17 +11,17 @@ Console.WriteLine("Введите первое число: ");
 int number1 = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите второе число: ");
 int number2 = Convert.ToInt32(Console.ReadLine());
-int Degree(int num)
+int Degree(int num1, int num2)
 {
     int degree = 1;
     int counter = 1;
-    while (counter <= number2)
+    while (counter <= num2)
     {
-        degree = degree * number1;
+        degree = degree * num1;
         counter++;
     }
     return degree;
 }
-int degreeResult = Degree(number1);
+int degreeResult = Degree(number1, number2);
 Console.WriteLine($"{number1} в степени {number2} = {degreeResult}");
 
