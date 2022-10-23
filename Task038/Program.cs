@@ -4,13 +4,14 @@
 // [3.5, 7.1, 22.9, 2.3, 78.5] -> 76.2
 
 
-double [] CreateArrayRndInt(int size, int min, int max)
+double[] CreateArrayRndInt(int size, int min, int max)
 {
     double[] array = new double[size];
     Random rnd = new Random();
     for (int i = 0; i < array.Length; i++)
     {
-        array[i] = rnd.NextDouble() * (max - min) + min;
+        double rndNum = rnd.NextDouble() * (max - min) + min;
+        array[i] = Math.Round(rndNum, 2);
     }
     return array;
 }
@@ -33,8 +34,8 @@ double SubtractionMinMaxNum(double[] array)
     double subtraction = 0;
     for (int i = 0; i < array.Length; i++)
     {
-        if(array[i] > max) max = array[i];
-        if(array[i] < min) min = array[i];
+        if (array[i] > max) max = array[i];
+        if (array[i] < min) min = array[i];
     }
     return subtraction = max - min;
 }
@@ -45,7 +46,7 @@ double subtractionMinMaxNum = SubtractionMinMaxNum(arr);
 Console.WriteLine(subtractionMinMaxNum);
 
 
-// Не понимаю как округлить массив(
+
 
 
 
