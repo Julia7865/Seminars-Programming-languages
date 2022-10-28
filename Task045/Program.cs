@@ -25,17 +25,17 @@ void PrintArray(int[] array)
 }
 
 
-int[] CopyArray (int[] array)
+int[] CopyArray(int[] array)
 {
-int[] newArray = new int[array.Length];
-for (int i = 0; i < array.Length; i++)
-{
-newArray[i] = array[i];
-}
-return newArray;
+    int[] newArray = new int[array.Length];
+    for (int i = 0; i < array.Length; i++)
+    {
+        newArray[i] = array[i];
+    }
+    return newArray;
 }
 
-int[] arr = CreateArrayRndInt (5, 1, 9);
+int[] arr = CreateArrayRndInt(5, 1, 9);
 int[] copyArray = CopyArray(arr);
 copyArray[0] = 99;
 PrintArray(arr);
